@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { createContext, useState } from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, Image } from 'react-native';
 import { Stopwatch } from 'react-native-stopwatch-timer';
 import styles from './components/style';
 import Mybutton from './components/button';

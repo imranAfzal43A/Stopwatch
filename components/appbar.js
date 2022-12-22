@@ -1,15 +1,13 @@
-import { useContext,useState } from 'react';
+import { useContext } from 'react';
 import { Appbar } from 'react-native-paper';
-import { NightModecontext } from '../App';
-import { Image } from 'react-native';
+import { NightModecontext } from '../store/context';
 import styles from './style';
-const MyAppBar = () => {
+const MyAppBar = (props) => {
   const night = useContext(NightModecontext);
-  const [nightMode, setNightmode] = useState(false);
   return (
     <Appbar.Header style={!night ? styles.appabr : styles.appabrN}>
       <Appbar.Content title="Stopwatch" />
-      <Appbar.Action icon={!night ? require('../assets/sun.png') : require('../assets/moon.png')} onPress={() => { setNightmode(!nightMode) }} />
+      <Appbar.Action icon={!night ? require('../assets/sun.png') : require('../assets/moon.png')} onPress={props.onPress} />
     </Appbar.Header>
   )
 };

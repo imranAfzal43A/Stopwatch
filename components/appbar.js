@@ -11,5 +11,4 @@ const MyAppBar = (props) => {
     </Appbar.Header>
   )
 };
-
 export default MyAppBar;

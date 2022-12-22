@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { TouchableOpacity, Text } from "react-native";
 import styles from "./style";
-import { NightModecontext } from "../store/context";
+import { NightModecontext } from "../App";
 const Mybutton = (props) => {
     const night = useContext(NightModecontext);
     return (

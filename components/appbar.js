@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Appbar } from 'react-native-paper';
-import { NightModecontext } from '../store/context';
+import { NightModecontext } from "../App";
 import styles from './style';
 const MyAppBar = (props) => {
   const night = useContext(NightModecontext);

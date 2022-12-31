@@ -5,6 +5,10 @@ import { Stopwatch } from 'react-native-stopwatch-timer';
 import styles from './components/style';
 import Mybutton from './components/button';
 import MyAppBar from './components/appbar';
+import React from 'react';
+import { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+
+const adUnitId = __DEV__ ? TestIds.BANNER : 'ca-app-pub-7486398682142813/5348204642';
 export const NightModecontext = createContext()
 export default function App() {
   const [start, setStart] = useState(false)
@@ -21,6 +25,13 @@ export default function App() {
         <Mybutton title='Reset' onPress={() => { setStart(false); setReset(true) }} />
         <Mybutton title='Mili sec' onPress={() => setCM(!cm)} />
         <StatusBar style="auto" />
+        <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.BANNER}
+          requestOptions={{
+            requestNonPersonalizedAdsOnly: true,
+          }}
+        />
       </SafeAreaView>
     </NightModecontext.Provider>
   );

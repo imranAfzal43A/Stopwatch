@@ -2,5 +2,6 @@
 Used context api and implimented the night mode and admob integrated
 screenshpts
 
-![day ss](https://user-images.githubusercontent.com/111197710/210133801-43d7c92b-efbc-453e-922f-16a968971333.jpg)
-![nifgt ss](https://user-images.githubusercontent.com/111197710/210133809-9575a85d-31ea-4f11-b208-bc12077d0dc1.jpg)
+
+![day ss](https://user-images.githubusercontent.com/111197710/210133866-dc8231ff-541e-46c6-ad52-e42e9cf997f9.jpg)
+![nifgt ss](https://user-images.githubusercontent.com/111197710/210133872-79cd2ec7-7bab-4931-86bc-174b4465366a.jpg)
